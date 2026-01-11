@@ -42,8 +42,8 @@ Jak uruchomić:
    - W terminalu przejdź do katalogu, w którym znajduje się plik `Serwer.java`.
    - Skorzystaj z komendy: 
      ```
-     javac Serwer.java
-     java Serwer
+     javac -d bin src/*.java
+     java -cp bin Serwer
      ```
    - Serwer uruchomi się i zacznie nasłuchiwać na porcie 12345.
 
@@ -51,39 +51,11 @@ Jak uruchomić:
    - W terminalu przejdź do katalogu, w którym znajduje się plik `Klient.java`.
    - Skorzystaj z komendy:
      ```
-     javac Klient.java
-     java Klient
+     java -cp bin Serwer
      ```
-   - Klient poprosi o podanie ID, a następnie wyświetli dostępne opcje (np. 1. Kot, 2. Pies, 3. Samochód).
+   - Klientowi nadawany jest numer ID, a następnie wyświetli dostępne opcje.
    - Klient może wybrać żądaną klasę lub zakończyć połączenie.
 
-Przykładowe działanie:
-----------------------
-1. **Serwer loguje**:
-   - „Serwer uruchomiony...”
-   - „Serwer generuje opóźnienie: 1200ms przed obsługą klienta ID: 1”
-   - „Polaczenie nawiazane z klientem ID: 1”
-   - „Aktualna liczba polaczen: 1”
-   - „Serwer wysłał obiekty do klienta ID: 1: Koty”
-   
-2. **Klient loguje**:
-   - „Połączono z serwerem. Status: OK”
-   - „Wybierz klasę do pobrania:”
-     ```
-     1. Kot
-     2. Pies
-     3. Samochód
-     4. Zakończ połączenie
-     ```
-   - Klient wybiera, np. „1”, aby pobrać obiekty typu „Kot”.
-
-Uwagi:
-------
-- Serwer wykorzystuje losowe opóźnienia, które pozwalają zaobserwować, jak różne czasy odpowiedzi wpływają na działanie systemu.
-- Każdy klient ma możliwość zadawania różnych pytań o obiekty.
-- Klient ma możliwość zakończenia połączenia w każdej chwili.
-
-***************************************************************************************
 
 
 
