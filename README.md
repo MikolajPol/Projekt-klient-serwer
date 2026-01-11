@@ -17,7 +17,7 @@ Serwer:
 
 Klienci:
 --------
-1. Klient łączy się z serwerem, podając swoje ID (numer).
+1. Klient łączy się z serwerem oraz otrzymuje numer ID.
 2. Po udanym połączeniu klient może wybierać, jaką klasę obiektów chce pobrać (Kot, Pies, Samochód).
 3. Klient może również zakończyć połączenie, wybierając odpowiednią opcję w menu.
 4. Jeśli klient zażąda obiektów, które nie istnieją na serwerze, otrzyma dowolny obiekt, np. pusty obiekt klasy „Kot”.
@@ -55,6 +55,7 @@ Jak uruchomić:
      ```
    - Klientowi nadawany jest numer ID, a następnie wyświetli dostępne opcje.
    - Klient może wybrać żądaną klasę lub zakończyć połączenie.
+
 
 
 
