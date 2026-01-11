@@ -51,10 +51,11 @@ Jak uruchomić:
    - W terminalu przejdź do katalogu, w którym znajduje się plik `Klient.java`.
    - Skorzystaj z komendy:
      ```
-     java -cp bin Serwer
+     java -cp bin Klient
      ```
    - Klientowi nadawany jest numer ID, a następnie wyświetli dostępne opcje.
    - Klient może wybrać żądaną klasę lub zakończyć połączenie.
+
 
 
 
